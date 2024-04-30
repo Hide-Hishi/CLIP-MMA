@@ -15,9 +15,9 @@ setup(
     version="1.0",
     description="",
     author="Hidekazu Hishinuma",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
+    packages=find_packages("clip_mma"),
+    package_dir={"": "clip_mma"},
+    py_modules=[splitext(basename(path))[0] for path in glob('clip_mma/*.py')],
     include_package_data=True,
     install_requires=_requires_from_file('requirements.txt'),
 )
