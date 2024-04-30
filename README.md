@@ -1,4 +1,4 @@
-# mathmodel_analysis
+# CLIP-MMA
 The package for selection of mathematical models and parameter estimation.
 ## Installation
 A
