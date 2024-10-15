@@ -42,3 +42,9 @@ $pip install git+https://github.com/Hide-Hishi/CLIP-MMA.git
     ```
     %run script/run_parameter_estimation.py config.yaml <target images directory path>
     ```
+
+## Mathematical Models Data
+
+You can generate pattern images from each mathematical model by setting the parameters within the `.ipynb` files located in the `model_notebooks` directory. To construct a dataset, please follow the additional instructions provided in the **Preparing the Dataset** section.
+
+
