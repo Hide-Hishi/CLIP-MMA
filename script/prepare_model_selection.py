@@ -13,7 +13,7 @@ import argparse
 base_dir = Path(os.path.abspath(__file__)).parents[1]
 sys.path.insert(0, base_dir)
 
-from umap_mma.selection_func import model_selection_preprocessing
+from clip_mma.selection_func import model_selection_preprocessing
 
 
 def main():
