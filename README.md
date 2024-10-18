@@ -3,7 +3,7 @@ CLIP-MMA is a Python library designed for the analysis of mathematical models, i
 
 ## Installation
 ```
-$pip install git+https://github.com/Hide-Hishi/CLIP-MMA.git
+$git clone https://github.com/Hide-Hishi/CLIP-MMA.git
 ```
 ## Initial Setup
 
