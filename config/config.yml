@@ -1,15 +1,15 @@
-#全体
+#General settings
 use_gpu: True
 use_model: clip
 
-
-#CLIPの設定
+#CLIP settings
 model:
   clip:
     base_model: ViT-B/32
 
+#Data settings
 data:
-  data_dir: /content/drive/MyDrive/論文/package/data
+  data_dir: ./data
   mathematical_model_list:
     - Turing
     - KT
@@ -20,18 +20,20 @@ data:
     - L_system
     - Edwards_Wilkinson
   parameter_estimation_data:
-    train: exp2_narrow_q0
-    val: exp1_narrow_q0_val
+    train: parameter_estimation_train
+    val: parameter_estimation_val
   param_space_split_n: 
     - 10
     - 10
-
+    
+#UMAP settings
 umap:
   n_neighbors: 50
   min_dist: 0.7
-  mapper_name: mapper_nn_50_md_0.7.pickle
+  mapper_name: mapper_nn_50_md_07.pickle
   randomseed: 123
 
+#DML settings
 dml:
   output_dim: 2
   batch_size: 32
@@ -43,6 +45,7 @@ dml:
   sampler_m: 4
   num_workers: 2
 
+#NGBoost settings
 ngboost:
   modelname: ngb
   criterion: friedman_mse
