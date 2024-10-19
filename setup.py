@@ -15,7 +15,7 @@ setup(
     version="1.0",
     description="",
     author="Hidekazu Hishinuma",
-    url="https://github.com/Hide-Hishi/CLIP-MMA.git"
+    url="https://github.com/Hide-Hishi/CLIP-MMA.git",
     packages=find_packages("clip_mma"),
     package_dir={"": "clip_mma"},
     py_modules=[splitext(basename(path))[0] for path in glob('clip_mma/*.py')],
