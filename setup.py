@@ -20,5 +20,6 @@ setup(
     package_dir={"": "clip_mma"},
     py_modules=[splitext(basename(path))[0] for path in glob('clip_mma/*.py')],
     include_package_data=True,
+    python_requires='>=3.10',
     install_requires=_requires_from_file('requirements.txt'),
 )
