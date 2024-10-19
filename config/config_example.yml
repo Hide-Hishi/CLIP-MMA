@@ -1,0 +1,62 @@
+#General settings
+use_gpu: True
+use_model: clip
+
+#CLIP settings
+model:
+  clip:
+    base_model: ViT-B/32
+
+#Data settings
+data:
+  data_dir: data
+  mathematical_model_list:
+    - Turing
+    - KT
+    - Gray_Scott
+    - PhaseField
+    - Eden
+    - DLA
+    - L_system
+    - Edwards_Wilkinson
+  parameter_estimation_data:
+    train: parameter_estimation_train
+    val: parameter_estimation_val
+  param_space_split_n: 
+    - 10
+    - 10
+    
+#UMAP settings
+umap:
+  n_neighbors: 50
+  min_dist: 0.7
+  load_mapper_name: mapper_nn_50_md_0.7.pickle
+  randomseed: 123
+
+#DML settings
+dml:
+  output_dim: 2
+  batch_size: 32
+  epoch: 100
+  learning_rate: 0.00001
+  weight_decay: 0.001
+  loss_margin: 0.1
+  miner_epsilon: 0.2
+  sampler_m: 4
+  num_workers: 2
+  test_interval: 1
+  patience: 10
+
+#NGBoost settings
+ngboost:
+  modelname: ngb
+  criterion: friedman_mse
+  tree_max_depth: 3
+  lattice_size: 0.005
+  grid_num: 100
+  parameter_n: 2
+  parameter_list:
+    - f_v
+    - g_v
+  learning_rate: 0.087
+  n_estimators: 150
