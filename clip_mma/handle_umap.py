@@ -79,6 +79,7 @@ class UMAP_Module():
         data_dir = self.config["data"]["data_dir"]
         use_model = self.config["use_model"]
         save_dir = os.path.join(data_dir,use_model,"mapper")
+        os.makedirs(save_dir,exist_ok=True)
         umap_cfg = self.config["umap"]
         mapper_path = os.path.join(save_dir,umap_cfg["load_mapper_name"])
         with open(mapper_path,"rb") as f:
