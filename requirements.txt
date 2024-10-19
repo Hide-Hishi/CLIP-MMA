@@ -1,0 +1,14 @@
+### For CUDA compatibility, adjust this package version according to your CUDA version ###
+torch == 2.4.1+cu121
+faiss-gpu-cu12 == 1.8.0
+
+numpy == 1.26.4
+scipy == 1.13.1
+scikit-learn == 1.5.2
+umap-learn == 0.5.6
+-e git+https://github.com/openai/CLIP.git
+ngboost == 0.5.1
+pytorch-metric-learning == 2.6.0
+record-keeper == 0.9.32
+tensorboard == 2.17.0
+
