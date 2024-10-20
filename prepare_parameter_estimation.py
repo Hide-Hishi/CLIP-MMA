@@ -6,7 +6,6 @@ import os
 from PIL import Image
 import glob
 import sys
-from pathlib import Path
 import argparse
 
 from clip_mma.estimation import parameter_estimation_preprocessing
