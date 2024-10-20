@@ -48,8 +48,20 @@ $pip install -r requirements.txt
     %run script/run_parameter_estimation.py config.yaml <target images directory path>
     ```
 
-## Mathematical Models Data
+## Mathematical Models Data for Training Datasets
 
-You can generate pattern images from each mathematical model by setting the parameters within the `.ipynb` files located in the `model_notebooks` directory. To construct a dataset, please follow the additional instructions provided in the **Preparing the Dataset** section.
+You can generate pattern images from each mathematical model by setting the parameters within the `.ipynb` files located in the `model_notebooks` directory. To construct a dataset, please follow the instructions provided in the **Preparing the Dataset** section.
+Our dataset can be obtained from the following repository.
+```
+https://figshare.com/account/projects/224526/articles/27263601?file=49883652
+```
+Please place both the `model_image` and `target_image` directories under `CLIP-MMA/data`.
+
+## Trained Models Data
+The pre-trained models can be obtained from the following repository.
+```
+https://figshare.com/account/projects/224526/articles/27263634?file=49883784
+```
+To use this data, please place the extracted `clip` directory directly under `CLIP-MMA/data`.
 
 
