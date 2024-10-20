@@ -20,6 +20,7 @@ $pip install -r requirements.txt
 2. **For Parameter Estimation:**
    - Store pattern images based on different parameters within the considered parameter space into a single folder and place it in `data/model_image/`.
    - Place folders containing the target images of interest into any subdirectory under　`data/target_image/`.
+   - Our code is designed to estimate two parameters. If you wish to change the number of variables, please modify the relevant part of the script. Additionally, the range of the parameters to be predicted must be specified in matrix form in `data/clip/parameter_domain/<your-training-dataset-name>/parameter_domain_array.npy`. This is necessary for proper discretization of the parameter space using a grid. Note that the directory name must match the name of the training dataset directory.
 
 3. **Configuration Files:**
    - Write the necessary configurations in a YAML file and store it in the `config/` directory.
