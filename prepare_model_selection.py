@@ -6,7 +6,6 @@ import os
 from PIL import Image
 import glob
 import sys
-from pathlib import Path
 import argparse
 
 from clip_mma.selection_func import model_selection_preprocessing
