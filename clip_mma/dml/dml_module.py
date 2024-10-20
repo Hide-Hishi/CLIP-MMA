@@ -22,8 +22,8 @@ class Dimension_Reducer():
     """
     def __init__(self,config):
         model_dir = os.path.join(config["data"]["data_dir"],config["use_model"],"dml_model")
-        trunk = torch.load(os.path.join(model_dir,"trunk_state_dict.pth"))
-        embedder = torch.load(os.path.join(model_dir,"embedder_state_dict.pth"))
+        trunk = torch.load(os.path.join(model_dir,"trunk_state_dict.pth"),weights_only=False)
+        embedder = torch.load(os.path.join(model_dir,"embedder_state_dict.pth"),weights_only=False)
 
 
         trunk = DenseNet()
