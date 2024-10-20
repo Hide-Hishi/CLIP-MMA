@@ -9,8 +9,6 @@ import sys
 import numpy as np
 from PIL import Image
 import glob
-from pathlib import Path
-from pathlib import Path
 import argparse
 
 from clip_mma.estimation import parameter_estimation, show_estimation2D
