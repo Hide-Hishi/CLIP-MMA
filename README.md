@@ -54,14 +54,14 @@ $pip install -r requirements.txt
 You can generate pattern images from each mathematical model by setting the parameters within the `.ipynb` files located in the `model_notebooks` directory. To construct a dataset, please follow the instructions provided in the **Preparing the Dataset** section.
 Our dataset can be obtained from the following repository.
 ```
-https://figshare.com/account/projects/224526/articles/27263601?file=49883652
+https://doi.org/10.6084/m9.figshare.27263601.v1
 ```
 Please place both the `model_image` and `target_image` directories under `CLIP-MMA/data`.
 
 ## Trained Models Data
 The pre-trained models can be obtained from the following repository.
 ```
-https://figshare.com/account/projects/224526/articles/27263634?file=49883784
+https://doi.org/10.6084/m9.figshare.27263634.v1
 ```
 To use this data, please place the extracted `clip` directory directly under `CLIP-MMA/data`.
 
